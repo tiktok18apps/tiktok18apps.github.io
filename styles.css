@@ -143,11 +143,11 @@ p {
     .nav-links.active {
         display: flex;
     }
-    /* Footer Styling */
+   /* Footer Styling */
 footer {
     background-color: #333; /* Dark background for contrast */
     color: #fff; /* White text color */
-    padding: 20px 0; /* Padding for top and bottom */
+    padding: 20px 10px; /* Padding for top and bottom, with smaller side padding */
     text-align: center; /* Center-align text */
     font-family: Arial, sans-serif; /* Consistent font */
     border-top: 2px solid #444; /* Subtle border at the top */
@@ -180,7 +180,37 @@ footer a[href^="mailto:"] {
 footer a[href^="mailto:"]:hover {
     color: #357abd; /* Darker color for email link on hover */
 }
-    .nav-links li {
-        margin: 10px 0;
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px 10px; /* Reduce padding for smaller screens */
+    }
+
+    footer p {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    footer p:last-child {
+        margin-top: 8px; /* Reduce spacing for mobile */
+    }
+
+    footer a {
+        display: block; /* Stack links vertically on small screens */
+        margin: 5px 0; /* Add spacing between stacked links */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10px 5px; /* Further reduce padding for very small screens */
+    }
+
+    footer p {
+        font-size: 11px; /* Even smaller font size for very small screens */
+    }
+
+    footer p:last-child {
+        margin-top: 5px; /* Further reduce spacing */
     }
 }
