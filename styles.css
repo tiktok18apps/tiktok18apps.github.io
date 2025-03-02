@@ -143,6 +143,43 @@ p {
     .nav-links.active {
         display: flex;
     }
+    /* Footer Styling */
+footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center-align text */
+    font-family: Arial, sans-serif; /* Consistent font */
+    border-top: 2px solid #444; /* Subtle border at the top */
+    margin-top: 40px; /* Space above the footer */
+}
+
+footer p {
+    margin: 5px 0; /* Spacing between paragraphs */
+    font-size: 14px; /* Smaller font size for footer text */
+}
+
+footer a {
+    color: #ff6f61; /* Accent color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer a:hover {
+    color: #ff3b2f; /* Darker accent color on hover */
+}
+
+footer p:last-child {
+    margin-top: 10px; /* Extra spacing for the social media line */
+}
+
+footer a[href^="mailto:"] {
+    color: #4a90e2; /* Different color for email link */
+}
+
+footer a[href^="mailto:"]:hover {
+    color: #357abd; /* Darker color for email link on hover */
+}
     .nav-links li {
         margin: 10px 0;
     }
